@@ -1,0 +1,187 @@
+body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.animated-card {
+    width: 100%;
+    max-width: 400px;     background: white;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: scale(1);
+    margin: 0 auto;
+}
+
+.animated-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #007bff;
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+input.form-control {
+    padding: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+input.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1200px) {
+    .animated-card {
+        max-width: 80%;         padding: 25px;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .animated-card {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    input.form-control {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .animated-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    input.form-control {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .animated-card {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input.form-control {
+        padding: 8px;
+        font-size: 0.95rem;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+}
+
+.alert-info {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+input.form-control {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

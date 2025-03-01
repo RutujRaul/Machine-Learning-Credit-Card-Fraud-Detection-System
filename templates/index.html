@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection</title>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow-lg p-4 animated-card">
+            <h2 class="text-center mb-4 text-primary fw-bold">Fraud Detection System</h2>
+            
+            <form action="/predict" method="post">
+                <div class="mb-3">
+                    <label for="Amount" class="form-label">Amount:</label>
+                    <input type="text" class="form-control" name="Amount" autocomplete="off" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="V28" class="form-label">V28:</label>
+                    <input type="text" class="form-control" name="V28" autocomplete="off" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="V2" class="form-label">V2:</label>
+                    <input type="text" class="form-control" name="V2" autocomplete="off" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="V6" class="form-label">V6:</label>
+                    <input type="text" class="form-control" name="V6" autocomplete="off" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="V20" class="form-label">V20:</label>
+                    <input type="text" class="form-control" name="V20" autocomplete="off" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="V3" class="form-label">V3:</label>
+                    <input type="text" class="form-control" name="V3" autocomplete="off" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Check Transaction <i class="fas fa-search"></i></button>
+            </form>
+
+            {% if prediction_text %}
+                <div class="alert alert-info mt-3 fade-in">
+                    <h4 class="text-center">{{ prediction_text }}</h4>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
