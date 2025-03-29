@@ -16,3 +16,27 @@ A simple **Fraud Detection System** using **Machine Learning** and a **Flask web
   - pandas
   - numpy
   - joblib
+
+
+## Installation
+1. Clone the repository:
+bash:
+git clone https://github.com/YourUsername/Credit-Card-Fraud-Detection-System.git
+Navigate to the project directory:
+
+2. bash:
+cd Credit-Card-Fraud-Detection-System
+Install dependencies:
+
+3. bash:
+pip install -r requirements.txt
+Run the Flask app:
+
+4. bash:
+python app.py
+
+5. Visit the application at http://127.0.0.1:5000/.
+
+
+## 📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
