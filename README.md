@@ -21,7 +21,7 @@ A simple **Fraud Detection System** using **Machine Learning** and a **Flask web
 ## Installation
 1. Clone the repository:
 bash:
-git clone https://github.com/YourUsername/Credit-Card-Fraud-Detection-System.git
+git clone [https://github.com/YourUsername/Credit-Card-Fraud-Detection-System.git](https://github.com/RutujRaul/Machine-Learning-Credit-Card-Fraud-Detection-System.git)
 Navigate to the project directory:
 
 2. bash:
